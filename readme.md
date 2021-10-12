@@ -29,8 +29,8 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 [Import code](https://github.com/chenzw93/doc/import)
 
 ```shell
-git config --unset http.proxy
-git config --unset https.proxy
-git config http.sslVerify "false"
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+git config --global http.sslVerify "false"
 ```
 
