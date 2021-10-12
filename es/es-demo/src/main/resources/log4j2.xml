@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="patternLayout">%d{yyyy-MM-dd'T'HH:mm:ss,SSSXXX} %-5p [%t] %c{2} - %m%n</Property>
+        <property name="APP_NAME" value="es"/>
+        <Property name="logdir">/export/logs/${APP_NAME}</Property>
+    </Properties>
+
+
+    <Appenders>
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="${patternLayout}"/>
+        </Console>
+        <Async name="ASYNC">
+            <AppenderRef ref="CONSOLE"/>
+        </Async>
+
+        <RollingFile name="InfoLogger" fileName="${logdir}/run.log"
+                     filePattern="${logdir}/${APP_NAME}_%d{yyyy-MM-dd}_%i.log.gz" append="true">
+
+            <JsonLayout compact="true" eventEol="true"/>
+
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${patternLayout}"/>
+            <DefaultRolloverStrategy max="10"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+                <TimeBasedTriggeringPolicy/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <loggers>
+        <root level="info">
+            <AppenderRef ref="ASYNC"/>
+            <appender-ref ref="InfoLogger" level="info"/>
+        </root>
+        <!--        <logger name="org.springframework.data.elasticsearch.client.WIRE" level="trace"/>-->
+    </loggers>
+
+</Configuration>

@@ -1,0 +1,62 @@
+{
+  "properties": {
+    "path": {
+      "type": "keyword"
+    },
+    "responseBody": {
+      "type": "object"
+    },
+    "cost": {
+      "type": "long"
+    },
+    "method": {
+      "type": "keyword"
+    },
+    "param": {
+      "type": "keyword"
+    },
+    "userMobile": {
+      "type": "keyword"
+    },
+    "clientIp": {
+      "type": "ip"
+    },
+    "serverName": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_smart"
+    },
+    "startTime": {
+      "type": "date"
+    },
+    "endTime": {
+      "type": "date"
+    },
+    "userEmail": {
+      "type": "keyword"
+    },
+    "userId": {
+      "type": "keyword"
+    },
+    "contact": {
+      "type": "keyword"
+    },
+    "interfaceName": {
+      "type": "text",
+      "analyzer": "ik_max_word",
+      "search_analyzer": "ik_smart"
+    },
+    "country": {
+      "type": "keyword"
+    },
+    "province": {
+      "type": "keyword"
+    },
+    "city": {
+      "type": "keyword"
+    },
+    "location": {
+      "type": "object"
+    }
+  }
+}
