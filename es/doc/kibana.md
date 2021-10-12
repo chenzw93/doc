@@ -36,7 +36,7 @@ Kibana makes it easy to understand large volumes of data. Its simple, browser-ba
 
 [doc](https://www.elastic.co/guide/en/kibana/6.2/tutorial-define-index.html#tutorial-define-index)
 
-![index-pattern](image\kibana-indexpattern.png)
+![index-pattern](image/kibana-indexpattern.png)
 
 #### Discovering data
 
@@ -52,7 +52,7 @@ Kibana makes it easy to understand large volumes of data. Its simple, browser-ba
 
 自定义数据导出;
 
-![kibana-discovery](image\kibana-discovery.png)
+![kibana-discovery](image/kibana-discovery.png)
 
 #### Visualizing data
 
@@ -62,7 +62,7 @@ Kibana makes it easy to understand large volumes of data. Its simple, browser-ba
 
 折线,饼状,表格....
 
-![visualize](image\kibana-visualize.png)
+![visualize](image/kibana-visualize.png)
 
 #### Dashboard with visualizing
 
@@ -70,7 +70,7 @@ Kibana makes it easy to understand large volumes of data. Its simple, browser-ba
 
 可以展示 visualize 集合
 
-![dashboard](image\kibana-dashboard.png)
+![dashboard](image/kibana-dashboard.png)
 
 ## [安装](https://www.elastic.co/cn/downloads/kibana)
 

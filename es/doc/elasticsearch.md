@@ -64,7 +64,7 @@ es中的每条数据称为一个document，也就是一条记录，每条数据�
 
 定义文档中元数据的字段类型
 
-![](image\es-mapping.png)
+![](image/es-mapping.png)
 
 > nginx-access-2021-09-08: index名称
 >
@@ -163,7 +163,7 @@ GET index-test/_search
 
 配置文件主要在config目录下
 
-![es-config](image\es-config.png)
+![es-config](image/es-config.png)
 
 配置文件列表主要如上图所示
 
@@ -196,7 +196,7 @@ linux 版本的服务启动直接用如下命令，启动完成后，可以通�
 bin/elasticsearch
 ```
 
-![es-start](image\es-start.png)
+![es-start](image/es-start.png)
 
 ### plugin
 
@@ -216,7 +216,7 @@ sudo bin/elasticsearch-plugin install file:///path/to/plugin.zip
 
 ### [Index API](https://www.elastic.co/guide/en/elasticsearch/reference/6.2/docs-index_.html)
 
-![es-index](image\es-index.png)
+![es-index](image/es-index.png)
 
 ```shell
 POST /index-test/_doc/
@@ -241,7 +241,7 @@ POST /index-test/_doc/
 
 ### [Get API](https://www.elastic.co/guide/en/elasticsearch/reference/6.2/docs-get.html)
 
-![es-get](image\es-get.png)
+![es-get](image/es-get.png)
 
 ```shell
 GET /index-test/_doc/gfze3XsBWbHXLbipFnPC
@@ -427,7 +427,7 @@ private ElasticsearchRestTemplate template;
 
 ### 安装es后，设置绑定ip，启动服务报错
 
-![error](image\es-error1.png)
+![error](image/es-error1.png)
 
 如果启动es服务日志报错信息如上图，那就需要找运维修改部署机器的内核参数
 

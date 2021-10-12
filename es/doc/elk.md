@@ -6,7 +6,7 @@
 
 成熟的一些ELK架构设计如下图
 
-![elk](image\elk.png)
+![elk](image/elk.png)
 
 选择较多的点主要集中在数据的输入一端，如果是使用 `Beats` 进行数据的收集，有三种方式可以将数据导入的 `Elasticsearch` 中
 

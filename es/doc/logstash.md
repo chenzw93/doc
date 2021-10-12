@@ -56,11 +56,11 @@ logstash把一条数据输入到输出称为一个事件，事件处理逻辑可
 
 下载需要的安装包后，解压即可
 
-![](image\logstash-config.png)
+![](image/logstash-config.png)
 
 其中`config`目录下就是服务可选的配置文件，需要的一些配置可用在里面进行配置
 
-![](image\logstash-config-content.png.png)
+![](image/logstash-config-content.png.png)
 
 默认的配置文件包括
 

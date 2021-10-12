@@ -10,7 +10,7 @@
 
 `ELK`的架构中，首先第一步是进行日志收集，在Elastic公司，有一个开源数据传送器[Beats](https://www.elastic.co/guide/en/beats/libbeat/6.2/beats-reference.html),可以将其作为agent安装在服务器上，以将不同类型的操作数据发送到`Elasticsearch`中;
 
-![beats-platform](image\beats-platform.png)
+![beats-platform](image/beats-platform.png)
 
 可以看到Beat有多种类型，不同类型的beat收集不同类型的操作数据
 
@@ -26,7 +26,7 @@
 
 当启动 Filebeat 时，它会启动一个或多个prospectors，这些prospectors会查看配置文件中指定的日志目录。对于prospector找到的每个日志文件，Filebeat 都会启动一个harvester。每个收割机读取新内容的单个日志文件，并将新日志数据发送到 libbeat，后者聚合事件并将聚合数据发送到您为 Filebeat 配置的输出。
 
-![](image\filebeat-how.png)
+![](image/filebeat-how.png)
 
 
 
@@ -42,7 +42,7 @@
 
 ### Configuration
 
-![](image\filebeat-config.png)
+![](image/filebeat-config.png)
 
 下载需要的filebeat安装包，解压后如上图所示
 
@@ -56,7 +56,7 @@
 
 ##### Filebeat Inputs
 
-![](image\filebeat-input.png)
+![](image/filebeat-input.png)
 
 下述为一个基本的input配置下述为一个基本的input配置
 
@@ -92,7 +92,7 @@
 
 ##### Filebeat Modules
 
-![](image\filebeat-modules.png)
+![](image/filebeat-modules.png)
 
 ##### Processor
 
@@ -119,7 +119,7 @@ processors:
 - [Output codec](https://www.elastic.co/guide/en/beats/filebeat/6.2/configuration-output-codec.html)
 - [Cloud](https://www.elastic.co/guide/en/beats/filebeat/6.2/configure-cloud-id.html)
 
-![](image\filebeat-output.png)
+![](image/filebeat-output.png)
 
 ###### es
 
@@ -168,7 +168,7 @@ output.kafka:
 
   
 
-![](image\file-modules-list.png)
+![](image/file-modules-list.png)
 
 * 启用指定modules
 
